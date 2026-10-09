@@ -38,6 +38,6 @@ if ingredients_list:
         session.sql(my_insert_stmt).collect()
 
 import requests  
-smoothiefroot_response = requests.get("https://docs.python-requests.org/en/latest/")  
-st.text(smoothiefroot_response)
-#st.json(smoothiefroot_response.json())
+smoothiefroot_response = requests.get("https://www.fruityvice.com/api/fruit/watermelon")  
+st.json(smoothiefroot_response.json())
+#st.text(smoothiefroot_response)
