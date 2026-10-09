@@ -39,4 +39,4 @@ if ingredients_list:
 
 import requests  
 smoothiefroot_response = requests.get("https://docs.python-requests.org/en/latest/")  
-st.text(smoothiefroot_response)
+st.text(smoothiefroot_response.json())
